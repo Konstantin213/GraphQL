@@ -1,6 +1,6 @@
 import React from "react"
 import s from './morePage.module.css'
-import ButtonBack from "../../common/components/ButtonBack/ButtonBack";
+import ButtonBack from "../../common/ButtonBack";
 
 
 const MorePage = () => {
