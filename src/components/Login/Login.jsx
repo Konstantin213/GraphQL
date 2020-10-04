@@ -9,7 +9,7 @@ const layout = {
         span: 8,
     },
     wrapperCol: {
-        span: 10,
+        span: 5,
     },
 };
 const tailLayout = {
@@ -23,7 +23,7 @@ const Login = () => {
     const history = useHistory()
 
     const onFinish = () => {
-        history.push({pathname: '/blocks'})
+        history.push('/blocks')
     };
 
     const onFinishFailed = (errorInfo) => {

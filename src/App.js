@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import {Route} from "react-router-dom";
-import Blocks from "./block/Blocks";
-import MorePage from "./block/morePage/morePage";
-import Login from "./login/Login";
+import Blocks from "./components/Block/Blocks";
+import MorePage from "./components/MorePage/MorePage";
+import Login from "./components/Login/Login";
 
 
 const App = () => (

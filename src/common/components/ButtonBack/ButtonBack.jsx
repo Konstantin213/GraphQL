@@ -8,7 +8,7 @@ const ButtonBack = () => {
 
     const history = useHistory()
     const goBack = () => {
-        history.push({pathname: '/blocks'})
+        history.push('/blocks')
     };
 
     return <Button onClick={() => goBack()} type="primary">Назад</Button>

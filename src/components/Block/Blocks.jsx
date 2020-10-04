@@ -1,10 +1,9 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import b from './blocks.module.css'
-import Items from "./Item";
+import Items from "./Item/Item";
 
 const Blocks = () => {
-
 
     const history = useHistory()
     const goToDetail = () => {

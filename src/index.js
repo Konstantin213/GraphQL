@@ -5,26 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from "react-router-dom";
 import {ApolloProvider} from "react-apollo";
-import ApolloClient from 'apollo-boost';
-
-
-// const token = "62b7331895121eb503e59e624097750be167f3b2";
-//
-// const httpLink = {
-//     uri: 'https://api.github.com/graphql',
-//     headers: {
-//         authorization: `Bearer ${token}`
-//     }
-// };
-// const client = new ApolloClient  ({
-//     link: new HttpLink(httpLink),
-//     cache: new InMemoryCache()
-// });
-//
-const client = new ApolloClient({
-    uri: 'https://graphqlzero.almansi.me/api'
-})
-
+import client from "./api/Api";
 
 ReactDOM.render(
     <ApolloProvider client={client}>
