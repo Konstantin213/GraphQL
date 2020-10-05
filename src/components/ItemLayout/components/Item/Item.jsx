@@ -2,7 +2,7 @@ import React from "react";
 import {Query} from "react-apollo";
 import {useHistory} from "react-router-dom";
 import s from "./item.module.css";
-import {GetAllPosts} from "../../../../api/GraphQL/Query/GetAllPosts";
+import {getAllPosts} from "../../../../api/GraphQL/Query/GetAllPosts";
 import {imageUrl} from "../../../../api/Api";
 
 
@@ -33,7 +33,7 @@ const Item = () => {
     }
 
     return <Query
-        query={GetAllPosts}
+        query={getAllPosts}
     >
         {renderItems()}
     </Query>;
