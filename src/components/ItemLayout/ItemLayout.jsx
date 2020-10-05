@@ -1,13 +1,31 @@
 import React from "react";
-import Items from "./Item/Item";
+import {Query} from "react-apollo";
+import {getAllPosts} from "../../api/GraphQL/Query/GetAllPosts";
+import Item from "./components/Item/Item";
 
-const Blocks = () => {
+const ItemLayout = () => {
+
+    const renderList = ({loading, error, data}) => {
+        if (loading) return <p>Loading...</p>;
+        if (error) return <p>Error :(</p>;
+
+        const renderItem = ({id, title, body}) => (
+            <Item
+                key={id}
+                id={id}
+                title={title}
+                body={body}
+            />
+        )
+
+        return data.posts.data.map(renderItem);
+    }
     return (
-        <div>
-            <p>Айтемы!</p>
-            <Items />
-        </div>
-
-    )
+        <Query
+            query={getAllPosts}
+        >
+            {renderList}
+        </Query>
+    );
 }
-export default Blocks;
+export default ItemLayout;

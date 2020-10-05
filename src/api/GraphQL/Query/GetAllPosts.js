@@ -1,15 +1,15 @@
 import gql from "graphql-tag";
 
-export const GetAllPosts = gql`
-   query (
+export const getAllPosts = gql`
+    query (
         $options: PageQueryOptions
     ) {
-    posts(options: $options) {
-    data {
-    id
-    title
-    body
-    }
-    }
+        posts(options: $options) {
+            data {
+                id
+                title
+                body
+            }
+        }
     }
 `;

@@ -6,14 +6,19 @@
     margin: 30px;
     padding: 0 300px;
     cursor: pointer;
+    opacity: 1;
+    transition: opacity .8s;
 }
+
 .item:hover {
-    border: 1px solid #eeeeee;
+    opacity: .7;
 }
+
 .item img {
     width: 100px;
     height: 100px;
 }
+
 @media (max-width: 414px) {
 
     body {
