@@ -1,13 +1,12 @@
 import React from "react";
-import Items from "./Item/Item";
+import Item from "./components/Item/Item";
 
-const Blocks = () => {
+const ItemLayout = () => {
     return (
         <div>
-            <p>Айтемы!</p>
-            <Items />
+            <Item/>
         </div>
 
     )
 }
-export default Blocks;
+export default ItemLayout;

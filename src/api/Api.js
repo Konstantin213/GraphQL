@@ -6,5 +6,5 @@ const client = new ApolloClient({
 
 export default client;
 
-export const image = "https://www.meme-arsenal.com/memes/50569ac974c29121ff9075e45a334942.jpg";
+export const imageUrl = "https://www.meme-arsenal.com/memes/50569ac974c29121ff9075e45a334942.jpg";
 
